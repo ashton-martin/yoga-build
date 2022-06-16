@@ -13,6 +13,9 @@
 		30DDBB0A285BDE6E00034AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DDBB08285BDE6E00034AC1 /* Main.storyboard */; };
 		30DDBB0C285BDE6F00034AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DDBB0B285BDE6F00034AC1 /* Assets.xcassets */; };
 		30DDBB0F285BDE6F00034AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DDBB0D285BDE6F00034AC1 /* LaunchScreen.storyboard */; };
+		30DDBB1E285BE53A00034AC1 /* StylesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DDBB1D285BE53A00034AC1 /* StylesCollectionViewController.swift */; };
+		30DDBB20285BEB8900034AC1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DDBB1F285BEB8900034AC1 /* Style.swift */; };
+		30DDBB22285BEDC400034AC1 /* StyleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DDBB21285BEDC400034AC1 /* StyleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		30DDBB0B285BDE6F00034AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30DDBB0E285BDE6F00034AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30DDBB10285BDE6F00034AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DDBB1D285BE53A00034AC1 /* StylesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesCollectionViewController.swift; sourceTree = "<group>"; };
+		30DDBB1F285BEB8900034AC1 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		30DDBB21285BEDC400034AC1 /* StyleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,74 @@
 		30DDBB01285BDE6E00034AC1 /* YogaApp */ = {
 			isa = PBXGroup;
 			children = (
+				30DDBB19285BDEE500034AC1 /* Resources */,
+				30DDBB18285BDEDF00034AC1 /* Views */,
+				30DDBB17285BDED800034AC1 /* Controllers */,
+				30DDBB16285BDED100034AC1 /* Models */,
+			);
+			path = YogaApp;
+			sourceTree = "<group>";
+		};
+		30DDBB16285BDED100034AC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB1F285BEB8900034AC1 /* Style.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30DDBB17285BDED800034AC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB1C285BDF6700034AC1 /* ModelControllers */,
+				30DDBB1A285BDEED00034AC1 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30DDBB18285BDEDF00034AC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB1B285BDF3A00034AC1 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30DDBB19285BDEE500034AC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				30DDBB02285BDE6E00034AC1 /* AppDelegate.swift */,
 				30DDBB04285BDE6E00034AC1 /* SceneDelegate.swift */,
-				30DDBB06285BDE6E00034AC1 /* ViewController.swift */,
-				30DDBB08285BDE6E00034AC1 /* Main.storyboard */,
 				30DDBB0B285BDE6F00034AC1 /* Assets.xcassets */,
 				30DDBB0D285BDE6F00034AC1 /* LaunchScreen.storyboard */,
 				30DDBB10285BDE6F00034AC1 /* Info.plist */,
 			);
-			path = YogaApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30DDBB1A285BDEED00034AC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB06285BDE6E00034AC1 /* ViewController.swift */,
+				30DDBB1D285BE53A00034AC1 /* StylesCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30DDBB1B285BDF3A00034AC1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB08285BDE6E00034AC1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		30DDBB1C285BDF6700034AC1 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30DDBB21285BEDC400034AC1 /* StyleController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DDBB07285BDE6E00034AC1 /* ViewController.swift in Sources */,
+				30DDBB22285BEDC400034AC1 /* StyleController.swift in Sources */,
 				30DDBB03285BDE6E00034AC1 /* AppDelegate.swift in Sources */,
+				30DDBB1E285BE53A00034AC1 /* StylesCollectionViewController.swift in Sources */,
 				30DDBB05285BDE6E00034AC1 /* SceneDelegate.swift in Sources */,
+				30DDBB20285BEB8900034AC1 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUUPMSY3MR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YogaApp/Info.plist;
+				INFOPLIST_FILE = YogaApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BUUPMSY3MR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YogaApp/Info.plist;
+				INFOPLIST_FILE = YogaApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
